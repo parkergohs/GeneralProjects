@@ -1,0 +1,144 @@
+<!-- Template - Search Screen
+-
+-Filename: searchScreen.html
+-
+-Notes:
+-
+-To Do:
+-
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+
+ <title>Template - Search Screen</title>
+ <link rel="icon" href="SharedResources/yinYang.png">
+ <link rel="stylesheet" href="mainTemplate.css">
+ <link rel="stylesheet" href="searchScreen.css">
+</head>
+
+<body>
+<div id="headerBar"> 
+ <ul>
+  <li><a href="profile.html">Profile</a></li>
+  <li><a href="mediaGallery.html">Gallery</a></li>
+  <li><a href="searchScreen.html">Search</a></li>
+  <li><a href="settingsScreen.html">Settings</a></li>
+ </ul>  
+</div>
+
+<div id="mainArea"> 
+ <div id="searchInputArea">
+ <form>
+ <fieldset>
+  <legend><h2>Search For</h2></legend>
+  <input type="text" name="searchString" value=""><button onclick="beginSearch()">Begin Search</button><br>
+  
+  <h2>Filter By</h2>
+  <input type="checkbox" name="defaultSearchOptions" value="all" checked>All<br>
+  <input type="checkbox" name="defaultSearchOptions" value="profiles">Profiles<br>
+  <input type="checkbox" name="defaultSearchOptions" value="albums">Albums<br>
+  <input type="checkbox" name="defaultSearchOptions" value="videos">Videos<br>
+  <input type="checkbox" name="defaultSearchOptions" value="audio">Audio<br>
+  <input type="checkbox" name="defaultSearchOptions" value="images">Images<br>
+  
+  <h2>Sort By</h2>
+  Date<br>
+  <input type="radio" name="defaultSortOptions" value="newToOld" checked>New-Old<br>
+  <input type="radio" name="defaultSortOptions" value="oldToNew">Old-New<br>
+  <br>Views<br>
+  <input type="radio" name="defaultSearchOptions" value="highToLow" checked>High-Low<br>
+  <input type="radio" name="defaultSearchOptions" value="lowToHigh">Low-High<br>
+  <br>Include Previously Viewed Content? (Note: include indicator on each search result, like a pokeball for pokemon already caught)<br>
+  <input type="radio" name="includePreviouslyViewed" value="all" checked>Yes<br>
+  <input type="radio" name="includePreviouslyViewed" value="profiles">No<br>
+ 
+ </fieldset>
+ </form>
+ </div>
+ 
+ <div id="searchResultsArea">
+ <h1>Search Results</h1>
+ 
+  <div class="listedItem" id="">
+   <ul class="headerInfoBar">
+    <li><img src="SharedResources/unseenIndicator.png" height="10"/></li>
+	<li><h2>Title #</h2></li>
+   </ul>
+   <img src="SharedResources/yinYang.png" class="seenIndicator" />
+   <p>Media description</p>
+  </div>
+  
+  <div class="listedItem" id="">
+   <ul class="headerInfoBar">
+    <li>Seen/Unseen</li>
+	<li>Saved/Unsaved</li>
+	<li>Title #</li>
+   </ul>
+   <img></img>
+   <p>Media description</p>
+  </div>
+  
+  <div class="listedItem" id="">
+   <ul class="headerInfoBar">
+    <li>Seen/Unseen</li>
+	<li>Saved/Unsaved</li>
+	<li>Title #</li>
+   </ul>
+   <img></img>
+   <p>Media description</p>
+  </div>
+  
+  <div class="listedItem" id="">
+   <ul class="headerInfoBar">
+    <li>Seen/Unseen</li>
+	<li>Saved/Unsaved</li>
+	<li>Title #</li>
+   </ul>
+   <img></img>
+   <p>Media description</p>
+  </div>
+  
+  <div class="listedItem" id="">
+   <ul class="headerInfoBar">
+    <li>Seen/Unseen</li>
+	<li>Saved/Unsaved</li>
+	<li>Title #</li>
+   </ul>
+   <img></img>
+   <p>Media description</p>
+  </div>
+  
+  <div class="listedItem" id="">
+   <ul class="headerInfoBar">
+    <li>Seen/Unseen</li>
+	<li>Saved/Unsaved</li>
+	<li>Title #</li>
+   </ul>
+   <img></img>
+   <p>Media description</p>
+  </div>
+  
+  <div class="listedItem" id="">
+   <ul class="headerInfoBar">
+    <li>Seen/Unseen</li>
+	<li>Saved/Unsaved</li>
+	<li>Title #</li>
+   </ul>
+   <img></img>
+   <p>Media description</p>
+  </div>
+ 
+ </div>
+ 
+</div>
+
+<script src="SharedResources/jquery.js"></script>
+<script src="searchScreen.js"></script>
+</body>
+</html>
+
+
+
+

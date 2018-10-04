@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ 
+ <title>One Media - Profile</title>
+ <link rel="icon" href="../rsc/mainMenuButtonIcon.png">
+ <link rel="stylesheet" href="oneMediaIndex.css">
+ <link rel="stylesheet" href="oneMediaSuggestedMedia.css">
+</head>
+
+<body>
+<div id="headerBar"> 
+ <ul>
+  <li><img id="siteNavMenuButton" src="../rsc/navTree.png" height="40" onclick="showSiteNavMenu()"></img></li>
+  <li><img id="mainMenuButton" src="../rsc/omSun.png" height="40" onclick="showMainMenu()"></img></li>
+  <li><img id="settingsMenuButton" src="../rsc/cog.png" height="40"  onclick="showSettingsMenu()"></img></li>
+ </ul> 
+</div>
+
+<div id="pageHeaderBar"> 
+ <ul>
+  <li><img id="siteNavMenuButton" src="../rsc/navTree.png" height="40" onclick="showSiteNavMenu()"></img></li>
+  <li><img id="mainMenuButton" src="../rsc/omSun.png" height="40" onclick="showMainMenu()"></img></li>
+  <li><img id="settingsMenuButton" src="../rsc/cog.png" height="40"  onclick="showSettingsMenu()"></img></li>
+ </ul> 
+</div>
+
+<div id="mainArea"> 
+ <div id="contentArea">
+ 
+  <div id="siteNavMenuScreen">
+   <h2>Site Nav</h2>
+   <ul>
+    <li><a href="oneMediaIndex.html">Home</a></li>
+    <li><a href="oneMediaProfile.html">Profile</a></li>
+    <li><a href="oneMediaMedia.html">Media</a></li>
+   </ul>
+  </div>
+ 
+  <div id="mainMenuScreen">
+   <h2>Main Menu</h2>
+   
+   <h3>Search</h3>
+	<input id="searchInput" placeholder="Search for..."></input>
+	<button onclick="search()">Sign In</button>
+	<p>
+	 <button id="advancedSearchOptionsButton" onclick="toggleAdvancedSearchOptions()">Advanced Options</button>
+	 <div id="advancedSearchOptions">
+	  <ul>
+	   <li>Upload date</li>
+	   <li>Rating</li>
+	   <li>Language</li>
+	   <li>Content types</li>
+	   <li>Show fave channels first</li>
+	   <li>Age/awareness content</li>
+	   <li>Duration</li>
+	   <li>Subtitles</li>
+	   <li>content cost/free</li>
+	   <li>view count/ comment count</li>
+	  </ul>
+	 </div>
+	</p>
+  </div>
+  
+  <div id="settingsMenuScreen">
+   <h2>Settings Menu</h2>
+  </div>
+ 
+  
+  <h1 id="_________Title">Suggested Media</h1>
+  
+  <h2>Suggested Video #1</h2>
+  <img id="siteNavMenuButton" src="../rsc/navTree.png" height="40" onclick="showSiteNavMenu()"></img>
+  <p>100 char media summary</p>
+  
+  
+  
+  
+  
+  
+ </div>
+</div>
+
+<script src="oneMediaIndex.js"></script>
+<script src="oneMediaSuggestedMedia.js"></script>
+</body>
+</html>
+
+
+

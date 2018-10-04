@@ -1,0 +1,90 @@
+#contentArea
+{
+ overflow-y: hidden;	
+}
+
+#mediaArea
+{
+ //background-color: rgba(29, 39, 89, 0.7);
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 50%;
+}
+
+#currentVideo
+{
+ width: 80%;
+}
+
+#mediaButtonBarList
+{
+ background-color: rgba(28, 49, 78, 0.9);
+}
+
+#mediaButtonBarList ul
+{
+ margin: 0;
+ padding: 0;
+}
+
+#mediaButtonBarList li
+{
+ margin-top: 0;
+ padding-top: 0;
+ display: inline-block;
+ margin: 0 30px;
+}
+
+#mediaDescriptionBox
+{
+ overflow-y: scroll;	
+}
+
+#communityArea
+{
+ //background-color: rgba(219, 121, 189, 0.7);
+ position: absolute;
+ top: 0;
+ left: 50%;
+ height: 100%;
+ width: 50%;
+ overflow-y: scroll;
+}
+
+.commentPost
+{
+ background-color: rgba(219, 221, 229, 0.9);	
+ border-radius: 7px;
+ margin-bottom: 30px;
+}
+
+.commentPost h2
+{
+ background-color: rgba(219, 221, 229, 0.9);
+ color: #123292;
+ border-radius: 7px;
+ display: inline-block;
+ //width: 100%;
+ padding: 0 10px;
+ margin: 0;
+ overflow: hidden;
+}
+
+.commentPost button
+{
+ float: right;
+ background-color: white;
+ color: skyblue;
+ border-color: skyblue;
+}
+
+.commentPost p
+{
+ background-color: rgba(119, 221, 229, 0.9);
+ color: #232454;
+ border-radius: 0 0 7px 7px;
+ padding: 0 10px;
+ margin: 0; 
+}

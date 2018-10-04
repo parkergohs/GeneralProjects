@@ -1,0 +1,19 @@
+/* Sol Health Center
+*
+*Filename: solStore.css	
+*
+*
+*
+*Notes:
+*
+*To Do:
+*
+*/
+
+#storeItems li
+{
+ background-color: rgba(30, 130, 200, 0.8);
+ width: 30%;
+ float: left;
+ margin: 10px;
+}

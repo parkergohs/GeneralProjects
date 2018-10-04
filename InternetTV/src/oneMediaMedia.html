@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+
+ <title>One Media - Media</title>
+ <link rel="icon" href="../rsc/mainMenuButtonIcon.png">
+ <link rel="stylesheet" href="oneMediaIndex.css">
+ <link rel="stylesheet" href="oneMediaMedia.css">
+</head>
+
+
+<body>
+<div id="headerBar"> 
+ <ul>
+  <li><img id="siteNavMenuButton" src="../rsc/navTree.png" height="40" onclick="showSiteNavMenu()"></img></li>
+  <li><img id="mainMenuButton" src="../rsc/omSun.png" height="40" onclick="showMainMenu()"></img></li>
+  <li><img id="settingsMenuButton" src="../rsc/cog.png" height="40"  onclick="showSettingsMenu()"></img></li>
+ </ul> 
+</div>
+
+<div id="mainArea"> 
+ <div id="contentArea">
+  
+  <div id="siteNavMenuScreen">
+   <h2>Site Nav</h2>
+   <ul>
+    <li><a href="oneMediaIndex.html">Home</a></li>
+    <li><a href="oneMediaProfile.html">Profile</a></li>
+    <li><a href="oneMediaMedia.html">Media</a></li>
+   </ul>
+  </div>
+  
+  <div id="mainMenuScreen">
+   <h2>Main Menu</h2>
+   
+   <h3>Search</h3>
+	<input id="searchInput" placeholder="Search for..."></input>
+	<button onclick="search()">Sign In</button>
+	<p>
+	 <button id="advancedSearchOptionsButton" onclick="toggleAdvancedSearchOptions()">Advanced Options</button>
+	 <div id="advancedSearchOptions">
+	  <ul>
+	   <li>Upload date</li>
+	   <li>Rating</li>
+	   <li>Language</li>
+	   <li>Content types</li>
+	   <li>Show fave channels first</li>
+	   <li>Age/awareness content</li>
+	   <li>Duration</li>
+	   <li>Subtitles</li>
+	   <li>content cost/free</li>
+	   <li>view count/ comment count</li>
+	  </ul>
+	 </div>
+	</p>
+  </div>
+  
+  <div id="settingsMenuScreen">
+   <h2>Settings Menu</h2>
+   
+   <div class="menuSection">
+    <h3><a href="signUp.html">Sign Up</a></h3>
+    <h3>Sign In</h3>
+	<input id="accountInput" placeholder="Username || Email"></input>
+	<input id="passwordInput" placeholder="Password"></input>
+	<button onclick="signIn()">Sign In</button>
+	<p><a href="recoverAccountInfo.html">forgot password?</a><p>
+   </div>
+  
+  <div id="mediaArea">
+   <div id="mediaScreen"> 
+    <video class="currentVideo" width="550" height="200" preload="metadata" poster="../rsc/settingsMenuButtonIcon.png" controls>
+	 <source src="../rsc/testVideo0.mp4" type="video/mp4">
+	</video>
+   </div>
+   
+   <div id="mediaButtonBar">
+    <ul id="mediaButtonBarList">
+	 <li><img >Rate</img></li>
+	 <li><img >Share</img></li>
+	 <li><img >Fave</img></li>
+	 <li><img >DL</img></li>
+	</ul>
+   </div>
+   
+   <div id="mediaDescriptionBox">
+    <h2>Video Title</h2>
+	<p>
+	 A video about cool stuff
+	</p>
+   </div>
+   
+  </div>
+  
+  <div id="communityArea">
+   <div id="responseOptionsBar">
+    <button onclick="reply()">Reply</button> 
+	<input>Sort comments</input>
+   </div>
+   <div class="commentPost">
+    <h2>Comment Title 1</h2> 
+	<button onclick="reply()">Reply</button>
+	<p>
+	 Such a cool video! hlhljhljlhljkhjhl h lhljk hljkh lkjh luh hlhljhljlhljkhjhl h lhljk hljkh lkjh luh 
+	 hlhljhljlhljkhjhl h lhljk hljkh lkjh luh
+	 hlhljhljlhljkhjhl h lhljk hljkh lkjh luh
+	 hlhljhljlhljkhjhl h lhljk hljkh lkjh luhhlhljhljlhljkhjhl h lhljk hljkh lkjh luh
+	 hlhljhljlhljkhjhl h lhljk hljkh lkjh luh hlhljhljlhljkhjhl h lhljk hljkh lkjh luh
+	</p>
+   </div>
+   
+   <div class="commentPost">
+    <h2>Comment Title 2</h2>
+	<button onclick="reply()">Reply</button>
+	<p>
+	 Sweet
+	</p>
+   </div>
+   
+   <div class="commentPost">
+    <h2>Comment Title 3</h2>
+	<button onclick="reply()">Reply</button>
+	<p>
+	 blahhhhhhh
+	</p>
+   </div>
+   
+   <div class="commentPost">
+    <h2>Comment Title 4</h2>
+	<button onclick="reply()">Reply</button>
+	<p>
+	 Such a good video!
+	</p>
+   </div>
+   
+   <div class="commentPost">
+    <h2>Comment Title 5</h2>
+	<button onclick="reply()">Reply</button>
+	<p>
+	 Sweettttttttt
+	</p>
+   </div>
+   
+   <div class="commentPost">
+    <h2>Comment Title 6</h2>
+	<button onclick="reply()">Reply</button>
+	<p>
+	 hkjhkjhkjh
+	</p>
+   </div>
+  
+  
+ </div>
+</div>
+
+<script src="oneMediaIndex.js"></script>
+<script src="oneMediaMedia.js"></script>
+</body>
+</html>

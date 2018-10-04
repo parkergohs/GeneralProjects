@@ -1,0 +1,111 @@
+/* Internet TV
+*
+*Filename: itvWatch.css	
+*
+*Notes:
+*
+*To Do:
+*
+*/
+
+h2
+{
+ text-align: center;
+}
+
+#mediaArea
+{
+ background-color: rgba(20, 30, 43, 0.9);
+ position: absolute;
+ top: 5%;
+ left: 5%;
+ height: 90%;
+ width: 45%;
+ overflow-y: scroll;
+ overflow-x: hidden;
+}
+
+#channelBar
+{ 
+ background-color: rgba(30, 130, 230, 0.8);
+}
+
+#mediaArea h3
+{
+ background-color: rgba(230, 230, 230, 0.9);	
+ width: 100%;
+ text-align: center;
+ margin-bottom: 0;
+ padding-bottom: 0;
+}
+
+#mediaArea P
+{
+ background-color: rgba(240, 240, 240, 0.9);	
+ width: 100%; 	
+ margin-top: 0;
+ padding-top: 0;
+}
+
+#channelBar li, #statBar li
+{ 
+ display: inline-block;
+}
+
+#commentArea
+{
+ background-color: rgba(20, 30, 43, 0.9);
+ position: absolute;
+ top: 5%;
+ left: 50%;
+ height: 90%;
+ width: 45%;
+ overflow-x: hidden;
+ overflow-y: scroll;
+}
+
+#commentArea h3
+{
+ background-color: rgba(230, 230, 230, 0.9);	
+ width: 100%;
+ text-align: center;
+ margin-top: 3px;
+ padding-top: 0;
+ margin-bottom: 0;
+ padding-bottom: 0; 
+}
+
+#commentArea P
+{
+ background-color: rgba(240, 240, 240, 0.9);	
+ width: 100%; 	
+ margin-top: 0;
+ padding-top: 0;
+ margin-bottom: 0;
+ padding-bottom: 0;
+}
+
+#commentArea img
+{
+ height: 30px;
+}
+
+#commentArea ul
+{
+ margin-left: 10px;
+ padding-left: 0px;
+ background-color: rgba(230, 230, 230, 0.9);	
+}
+
+#commentArea li
+{
+ margin-left: 10px;
+ padding-left: 0px;
+ display: inline-block;
+}
+
+#commentInputTextArea
+{
+ width: 100%;
+ margin-top: 20px; 
+}

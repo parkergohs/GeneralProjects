@@ -1,0 +1,23 @@
+body
+{
+ background-color: rgba(29,123, 134, 0.9);	
+}
+
+li
+{
+ display: inline-block;
+}
+
+button
+{
+ background-color: #3de;
+ color: #345;
+ border-color: #bdf; 
+}
+
+button:hover
+{
+ background-color: #3de;
+ color: #294;
+ border-color: #34f; 
+}

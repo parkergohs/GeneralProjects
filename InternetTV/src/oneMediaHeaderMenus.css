@@ -1,0 +1,120 @@
+
+#siteNavMenuButton
+{
+ margin-left: 10px;
+ 
+}
+
+#mainMenuButton
+{
+ margin-left: 300px;
+}
+
+#settingsMenuButton
+{
+ margin-left: 500px;
+}
+
+#siteNavMenuScreen
+{
+ background-color: rgba(240, 240, 240, 0.9);
+ display: none;
+ z-index: 4;
+ z-index: 4;
+ position: fixed;
+ top: 15%;
+ left: 5%;
+ height: 75%;
+ width: 90%;	
+}
+
+#mainMenuScreen
+{
+ background-color: rgba(240, 240, 240, 0.9);
+ display: none;
+ z-index: 4;
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 100%;	
+ overflow-y: scroll;
+}
+
+#advancedSearchOptions
+{
+ //display: none;	
+}
+
+#settingsMenuScreen
+{
+ background-color: rgba(240, 240, 240, 0.9);
+ display: none;
+ z-index: 4;
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 100%;
+ overflow-y: scroll; 
+}
+
+
+.evenNumberedSection
+{
+ background-color:rgba(229, 210, 239, 1.0);
+}
+
+.oddNumberedSection
+{
+ background-color:rgba(229, 240, 239, 1.0);
+}
+
+#pageHeaderBar
+{
+	
+	
+}
+
+#pageHeaderBar
+{
+ background-color: #1289ff; 
+ background-size: 100% auto;
+ color: #edfedf;
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 10%;
+ width: 100%;
+}
+
+#pageHeaderBar ul
+{
+ color: #edfedf;
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ margin-top: 0;
+ padding-top: 0;
+}
+
+#pageHeaderBar li
+{
+ color: #edfedf;
+ padding: 5px 20px;
+ display: inline-block;	
+ margin-top: 0;
+ padding-top: 0;
+}
+
+#pageHeaderBar img
+{
+ margin: 0;
+ padding: 0; 
+ height: 60px;
+ margin-left: 200px;
+}
+
+

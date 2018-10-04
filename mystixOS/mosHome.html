@@ -1,0 +1,138 @@
+<!-- Mystix O.S.
+-
+-Filename: mosHome.html
+-
+-
+-
+-Notes:
+-
+-To Do:
+-
+-
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+
+ <title>Mystix O.S. - Home Screen</title>
+ <!-- <link rel="icon" href="../rsc/itvLogo.png"> -->
+ <link rel="stylesheet" href="mosHome.css">
+</head>
+
+<body>
+<!-- Main Toolbars -->
+<div id="mainArea"> 
+ <div id="mainToolBarTop"> 
+  <ul>
+   <li><button onclick="displayMainMenuBox()">Main Menu</button></li>
+   <li><button onclick="displayProfileBox()">Profile</button></li>
+   <li><button onclick="displaySettingsBox()">Settings</button></li>
+  </ul>
+ </div>
+ <div id="mainToolBarRight">
+  <br><br><br> 
+  <h2>Themes</h2>
+  <ul>
+   <li></li>
+   <li><button onclick="displayMainHomeScreen()">Main Home Screen</button></li>
+   <li><button onclick="displayArtistHomeScreen()">Artist Screen</button></li>
+   <li><button onclick="displayScientistHomeScreen()">Scientist Screen</button></li>
+   <li><button onclick="displayBusinessHomeScreen()">Business Screen</button></li>
+  </ul>
+ </div>
+ <div id="mainToolBarBottom">
+ <h2>Open progs</h2>
+ <ul>
+   <li></li>
+  </ul> 
+ </div>
+ <div id="mainToolBarLeft">
+  <br><br><br>  
+  <h2>Faves</h2>
+  <ul>
+   <li></li>
+  </ul>
+ </div>
+<!-- EO Main Toolbars -->
+ 
+ 
+<div id="mainMenuBox">
+  <h2>Main Menu</h2>
+  <ul>
+   <li></li>
+  </ul>
+ </div>
+ 
+ <div id="settingsBox">
+  <h2>Settings</h2>
+  <ul>
+   <li></li>
+  </ul>
+ </div>
+
+ <div id="profileBox">
+  <h2>Profile</h2>
+  <ul>
+   <li></li>
+  </ul>
+ </div>
+ <div id="mainHomeScreen">
+ <!-- Home Screen Shortcuts -->
+ <ul class="homeScreenShortcuts" id="mainHomeScreenShortcuts">
+  <li><button onclick="launchWebBrowser()">Web Browser</button></li>    
+  <li><button onclick="launchShell()">Shell</button></li>
+  <li><button onclick="launchOperatingSystemManual()">O.S.Manual</button></li>
+  <li><button onclick="launchFileNavigator()">File System</button></li>  
+  <li><button onclick="launchOfficeSuite()">Office Suite</button></li>  
+  <li><button onclick="launchNotepad()">Notepad/IDE</button></li>  
+  <li><button onclick="launchControlPanel()">Control Panel</button></li>  
+ </ul>
+ <!-- EO Home Screen Shortcuts -->
+ </div>
+ <!-- EO div mainHomeScreen -->
+ 
+ <div id="artistHomeScreen">
+  <ul class="homeScreenShortcuts" id="artistHomeScreenShortcuts">
+  <li><button onclick="launchStudioApp()">Studio App</button></li>
+  <li></li>
+  <li></li>
+  <li></li>   
+ </ul>
+ </div>
+ <!-- EO div artistHomeScreen -->
+ 
+ <div id="scientistHomeScreen">
+  <ul class="homeScreenShortcuts" id="scientistHomeScreenShortcuts">
+  <li><button onclick="launchCalculator()">Calculator</button></li>
+  <li></li>
+  <li></li>  
+ </ul>
+ </div>
+ <!-- EO div scientistHomeScreen -->
+ 
+ <div id="businessHomeScreen">
+  <ul class="homeScreenShortcuts" id="businesssHomeScreenShortcuts">
+  <li><button onclick="launchFinancialApp()">Financial App</button></li>
+  <li></li>
+  <li></li>
+  <li></li>    
+ </ul>
+ </div>
+ <!-- EO div businessHomeScreen -->
+ 
+</div>
+
+<script src="../SharedResources/jquery.js"></script>
+<script src="mosHome.js"></script>
+<script src="mosHomeScreenButtonsMain.js"></script>
+<script src="mosHomeScreenButtonsArtistic.js"></script>
+<script src="mosHomeScreenButtonsScientific.js"></script>
+<script src="mosHomeScreenButtonsBusiness.js"></script>
+</body>
+</html>
+
+
+

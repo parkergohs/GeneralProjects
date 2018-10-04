@@ -1,0 +1,137 @@
+/*
+** Sol Health Center
+*/
+
+
+body
+{
+ color: #ffffff;
+ background-color: #ccffee;	
+}
+
+h1
+{
+ color: white;
+ text-align: center;
+ width: 100%;
+ background-color: rgb(0, 0, 255, 0.9);
+ margin-bottom: 0; 
+ border-radius: 7px;
+}
+
+h2
+{
+ color: white;
+ width: 100%;
+ background-color: rgb(41, 46, 173, 1.0);
+ padding-bottom: 0;
+ border-radius: 7px 7px 0px 0px;
+ text-align: center;
+}
+
+p
+{
+ margin: 0;	
+ margin-top: 0;
+ padding: 0px 20px 10px 20px;
+ width: 100%;
+ background-color: rgb(110, 200, 255, 0.0); 
+ border-radius:  0px 0px 7px 7px;
+}
+
+a
+{
+ color: #edfedf;
+ text-decoration: none;
+}
+
+button
+{
+ color: white;
+ background-color: #4656cf
+}
+
+button:hover
+{
+ color: white;
+ background-color: #465dff
+}
+
+#headerBar
+{
+ background-color: #1399ff;
+ color: #edfedf;
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 10%;
+ width: 100%;
+}
+
+#headerBar ul
+{
+ //background-color: #132477;
+ color: #edfedf;
+ position: absolute;
+ top: 0;
+ right: 0;
+ height: 100%;
+ margin: 0;
+ margin: 20px;
+}
+
+#headerBar li
+{
+ color: #edfedf;
+ display: inline-block;
+}
+
+#headerBar a
+{
+ color: #edfedf;
+ padding: 10px 20px;
+}
+
+#headerBar a:hover
+{
+ color: #4445fd;
+}
+
+#mainArea
+{
+ background-color: #fefeff;
+ background-image: url("../resources/healthCenter.jpg"); 
+ background-size: cover;
+ color: #232435;
+ position: absolute;
+ top: 10%;
+ left: 0;
+ height: 90%;
+ width: 100%;
+ overflow-x: hidden; 
+}
+
+.section
+{
+ background-color: rgb(110, 200, 255, 0.9); 
+ border-radius: 7px;
+}
+
+
+
+@media (min-width: 800px)
+{
+ #mainArea
+ {
+ background-color: #23bdff;
+ //background-image: url("../rsc/binary.jpg"); 
+ color: #232435;	
+ }	
+}
+
+
+@media (max-width: 800px)
+{
+	
+	
+}

@@ -1,0 +1,158 @@
+/* Internet TV
+*
+*Filename: itvHome.css	
+*
+*Notes:
+*
+*To Do:
+*
+*/
+body
+{
+ color: #000;
+ //background-color: #02df49;	
+}
+
+h1
+{
+ color: #4837dd;
+ text-align: center;	
+ background-color: #cbf;
+}
+
+h2
+{
+ color: #9278dd;
+ padding-left: 20px;
+ background-color: #02dfff;	
+}
+
+p
+{
+ padding: 0 10px;	
+ margin-bottom: 40px;
+ background-color: #02dfff;	
+}
+
+a
+{
+ color: #2324df;
+ text-decoration: none;
+}
+
+button
+{
+ background-color: grey;
+ border-color: silver; 
+ margin: 10px;
+}
+
+button:hover
+{
+ background-color: #8c9ccc;
+ border-color: silver; 
+}
+
+#headerBar
+{
+ background-color: #215365; 
+ background-size: 100% auto;
+ color: #edfedf;
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 10%;
+ width: 100%;
+ z-index: 11;
+}
+
+#headerBar ul
+{
+ color: #edfedf;
+ //position: absolute;
+ //top: 0;
+ //left: 0;
+ width: 100%;
+ height: 50%;
+ margin-top: 0;
+ padding-top: 0;
+ clear: both;
+}
+
+#headerBar li
+{
+ color: #edfedf;
+ padding: 5px 20px;
+ display: inline-block;	
+ margin-top: 0;
+ padding-top: 0;
+}
+
+#headerBar img
+{
+ margin: 0;
+ padding: 0; 
+ height: 50px;
+ margin-left: 100px;
+}
+
+#mainArea
+{
+ background-color: #ffffff;	
+ background-image: url("../rsc/pawBkgd.jpg"); 
+ background-size: cover;
+ position: absolute;
+ top: 10%;
+ left: 0;
+ height: 90%;
+ width: 100%;	
+ overflow-y: scroll;
+ overflow-x: hidden;
+}
+
+#pageHeaderBar
+{
+ z-index: 10;
+ position: absolute;
+ top: 10%;
+ left: 10%; 
+}
+
+#siteNavMenuScreen
+{
+ display: none;	
+ background-color: rgba(200, 30, 30, 0.8);
+ width: 100%;
+ height: 100%;
+ overflow-y: scroll;
+ z-index: 90;
+}
+
+#mainMenuScreen
+{
+ display: none;	
+ background-color: rgba(30, 200, 30, 0.8);
+ width: 100%;
+ height: 100%;
+ overflow-y: scroll;
+ z-index: 90;
+}
+
+#settingsMenuScreen
+{
+ display: none;	
+ background-color: rgba(30, 30, 230, 0.8);
+ width: 100%;
+ height: 100%;
+ overflow-y: scroll;
+ z-index: 90;
+}
+
+}
+@media
+{	
+}
+
+@media
+{
+}

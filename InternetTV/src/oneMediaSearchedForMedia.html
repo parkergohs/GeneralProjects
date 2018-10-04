@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ 
+ <title>One Media - Searched For Media</title>
+ <link rel="icon" href="../rsc/mainMenuButtonIcon.png">
+ 
+ <link rel="stylesheet" href="oneMediaListedMedia.css">
+ <link rel="stylesheet" href="oneMediaHeaderMenus.css">
+ <link rel="stylesheet" href="oneMediaIndex.css">
+</head>
+
+<body>
+<div id="headerBar"> 
+ <ul id="upper">
+  <li><img id="siteNavMenuButton" src="../rsc/navTree.png" height="40" onclick="showSiteNavMenu()"></img></li>
+  <li><img id="mainMenuButton" src="../rsc/omSun.png" height="40" onclick="showMainMenu()"></img></li>
+  <li><img id="settingsMenuButton" src="../rsc/cog.png" height="40"  onclick="showSettingsMenu()"></img></li>
+ </ul> 
+ <br> 
+ <ul id="lower">
+   <li><button id="displayVids" class="tabs" onclick="displayVids()">Vids</button></li>
+   <li><button id="displayPics" class="tabs" onclick="displayPics()">Pics</li>
+   <li><button id="displayAudio" class="tabs" onclick="displayAudio()">Audio</li>
+   <li><button id="displayDocs" class="tabs" onclick="displayDocs()">Docs</li>
+  </ul> 
+ 
+</div>
+
+
+
+<div id="mainArea"> 
+ <div id="contentArea">
+ 
+ 
+
+  <div id="siteNavMenuScreen">
+   <h2>Site Nav</h2>
+   <ul>
+    <li><a href="oneMediaIndex.html">Home</a></li>
+    <li><a href="oneMediaProfile.html">Profile</a></li>
+    <li><a href="oneMediaMedia.html">Media</a></li>
+   </ul>
+  </div>
+ 
+  <div id="mainMenuScreen">
+   <h2>Main Menu</h2>
+   
+   <h3>Search</h3>
+	<input id="searchInput" placeholder="Search for..."></input>
+	<button onclick="search()">Sign In</button>
+	<p>
+	 <button id="advancedSearchOptionsButton" onclick="toggleAdvancedSearchOptions()">Advanced Options</button>
+	 <div id="advancedSearchOptions">
+	  <ul>
+	   <li>Upload date</li>
+	   <li>Rating</li>
+	   <li>Language</li>
+	   <li>Content types</li>
+	   <li>Show fave channels first</li>
+	   <li>Age/awareness content</li>
+	   <li>Duration</li>
+	   <li>Subtitles</li>
+	   <li>content cost/free</li>
+	   <li>view count/ comment count</li>
+	  </ul>
+	 </div>
+	</p>
+  </div>
+  
+  <div id="settingsMenuScreen">
+   <h2>Settings Menu</h2>
+  </div>
+ 
+  <br><br>
+  
+  <div id="vidsScreen">
+  <h1 id="_________Title">Searched For Vids</h1>
+  
+  
+  <div class="mediaItem vidsItem">
+    <h2>Searched For Vids #0</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char vid summary</p>
+   </div>
+   
+   
+   <div class="mediaItem vidsItem">
+   <h2>Searched For Video #0</h2>
+   <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+   <p>100 char media summary</p>
+  </div>
+  
+  <div class="mediaItem vidsItem">
+   <h2>Searched For Video #1</h2>
+   <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+   <p>100 char media summary</p>
+  </div>
+  
+  <div class="mediaItem vidsItem">
+   <h2>Searched For Video #2</h2>
+   <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+   <p>100 char media summary</p>
+  </div> 
+  
+  <div class="mediaItem vidsItem">
+   <h2>Searched For Video #3</h2>
+   <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+   <p>100 char media summary</p>
+  </div> 
+  
+  <div class="mediaItem vidsItem">
+   <h2>Searched For Video #4</h2>
+   <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+   <p>100 char media summary</p>
+  </div>
+   
+  <div class="mediaItem vidsItem">
+   <h2>Searched For Video #5</h2>
+   <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+   <p>100 char media summary</p>
+  </div>
+  
+   <div class="mediaItem vidsItem">
+   <h2>Searched For Video #6</h2>
+   <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+   <p>100 char media summary</p>
+  </div>
+  
+   <div class="mediaItem vidsItem">
+   <h2>Searched For Video #7</h2>
+   <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+   <p>100 char media summary</p>
+  </div>
+  
+   <div class="mediaItem vidsItem">
+   <h2>Searched For Video #7</h2>
+   <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+   <p>100 char media summary</p>
+  </div>
+  
+   <div class="mediaItem vidsItem">
+   <h2>Searched For Video #8</h2>
+   <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+   <p>100 char media summary</p>
+  </div>
+  
+   <div class="mediaItem">
+   <h2>Searched For Video #9</h2>
+   <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+   <p>100 char media summary</p>
+  </div>
+  </div>
+  
+  <div id="audioScreen">
+  <h1 id="_________Title">Searched For Audio</h1>
+  
+   <div class="mediaItem audioItem">
+    <h2>Searched For Audio #0</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char audio summary</p>
+   </div>
+  
+  <div class="mediaItem audioItem">
+    <h2>Searched For Audio #1</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char audio summary</p>
+   </div>
+   
+   <div class="mediaItem audioItem">
+    <h2>Searched For Audio #2</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char audio summary</p>
+   </div>
+   
+   <div class="mediaItem audioItem">
+    <h2>Searched For Audio #3</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char audio summary</p>
+   </div>
+  <div class="mediaItem">
+   <h2>Searched For Audio #4</h2>
+   <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+   <p>100 char media summary</p>
+  </div>
+   
+  <div class="mediaItem">
+   <h2>Searched For Audio #5</h2>
+   <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+   <p>100 char media summary</p>
+  </div>
+  
+   <div class="mediaItem">
+   <h2>Searched For Audio #6</h2>
+   <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+   <p>100 char media summary</p>
+  </div>
+  
+   <div class="mediaItem">
+   <h2>Searched For Audio #7</h2>
+   <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+   <p>100 char media summary</p>
+  </div>
+  
+   <div class="mediaItem">
+   <h2>Searched For Audio #7</h2>
+   <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+   <p>100 char media summary</p>
+  </div>
+  
+   <div class="mediaItem">
+   <h2>Searched For Audio #8</h2>
+   <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+   <p>100 char media summary</p>
+  </div>
+  
+   <div class="mediaItem">
+   <h2>Searched For Audio #9</h2>
+   <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+   <p>100 char media summary</p>
+  </div>
+  </div>
+  
+  <div id="picsScreen">
+   <h1 id="_________Title">Searched For Pics</h1>
+  
+   <div class="mediaItem picsItem">
+    <h2>Searched For Pics #0</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char pic summary</p>
+   </div>
+  
+  <div class="mediaItem picsItem">
+    <h2>Searched For Pics #1</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char pic summary</p>
+   </div>
+   
+   <div class="mediaItem picsItem">
+    <h2>Searched For Pics #2</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char pic summary</p>
+   </div>
+   
+   
+   <div class="mediaItem picsItem">
+    <h2>Searched For Pics #3</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char pic summary</p>
+   </div>
+   
+   
+   <div class="mediaItem picsItem">
+    <h2>Searched For Pics #4</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char pic summary</p>
+   </div>
+   
+   <div class="mediaItem picsItem">
+    <h2>Searched For Pics #5</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char pic summary</p>
+   </div>
+   
+   <div class="mediaItem picsItem">
+    <h2>Searched For Pics #6</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char pic summary</p>
+   </div>
+   
+   <div class="mediaItem picsItem">
+    <h2>Searched For Pics #7</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char pic summary</p>
+   </div>
+   
+   <div class="mediaItem picsItem">
+    <h2>Searched For Pics #8</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char pic summary</p>
+   </div>
+   
+   <div class="mediaItem picsItem">
+    <h2>Searched For Pics #9</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char pic summary</p>
+   </div>
+   
+   <div class="mediaItem picsItem">
+    <h2>Searched For Pics #10</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char pic summary</p>
+   </div>
+  </div>
+  
+  <div id="docsScreen">
+  <h1 id="_________Title">Searched For Docs</h1>
+  
+   <div class="mediaItem docItem">
+    <h2>Searched For Docs #0</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char doc summary</p>
+   </div>
+  
+  <div class="mediaItem docItem">
+    <h2>Searched For Docs #1</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char doc summary</p>
+   </div>
+   
+   <div class="mediaItem docItem">
+    <h2>Searched For Docs #2</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char doc summary</p>
+   </div>
+   
+   <div class="mediaItem docItem">
+    <h2>Searched For Docs #3</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char doc summary</p>
+   </div>
+   
+   <div class="mediaItem docItem">
+    <h2>Searched For Docs #4</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char doc summary</p>
+   </div>
+   
+   <div class="mediaItem docItem">
+    <h2>Searched For Docs #5</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char doc summary</p>
+   </div>
+   
+   <div class="mediaItem docItem">
+    <h2>Searched For Docs #6</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char doc summary</p>
+   </div>
+   
+   
+   <div class="mediaItem docItem">
+    <h2>Searched For Docs #7</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char doc summary</p>
+   </div>
+   
+   <div class="mediaItem docItem">
+    <h2>Searched For Docs #8</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char doc summary</p>
+   </div>
+   
+   <div class="mediaItem docItem">
+    <h2>Searched For Docs #9</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char doc summary</p>
+   </div>
+   
+   <div class="mediaItem docItem">
+    <h2>Searched For Docs #10</h2>
+    <img class="mediaCoverImage" src="../rsc/navTree.png" height="40" onclick="openMediaFile()"></img>
+    <p>100 char doc summary</p>
+   </div>
+  </div>
+  
+  
+  
+  
+  
+ </div>
+</div>
+
+<script src="jquery.js"></script>
+<script src="oneMediaIndex.js"></script>
+<!--<script src="oneMediaSuggestedMedia.js"></script> -->
+</body>
+</html>
+
+
+

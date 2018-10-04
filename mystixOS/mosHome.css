@@ -1,0 +1,225 @@
+/* Mystix O.S.
+*
+*Filename: mosHome.css	
+*
+*
+*
+*Notes:
+*
+*To Do:
+*
+*/
+body
+{
+ color: #000;
+ background-color: #02df49;
+ background-image: url("../SharedResources/binary.jpg"); 
+}
+
+h1
+{
+ color: #4837dd;
+ text-align: center;	
+ //width: 100%;
+ background-color: #cbf;
+}
+
+h2
+{
+ color: white;
+ //background-color: #02dfff;	
+ margin-left: 0;
+ padding-left: 0;
+}
+
+p
+{
+ padding: 0 10px;	
+ margin-bottom: 40px;
+ background-color: #02dfff;	
+}
+
+a
+{
+ color: #2324df;
+ text-decoration: none;
+}
+
+li
+{
+ list-style: none;
+}
+
+button
+{
+ background-color: rgba(200, 200, 200, 1);
+ border-color: rgba(130, 180, 200, 1);
+ margin: 10px;
+ border-radius: 4px;
+}
+
+button:hover
+{
+ background-color: #8c9ccc;
+ border-color: silver; 
+}
+
+#mainArea
+{
+ //background-color: rgba(0, 0, 0, 1);
+ //background-image: url(""); 
+ background-size: cover;
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 100%;	
+ //overflow-y: scroll;
+ //overflow-x: hidden;
+}
+
+#mainHomeScreen
+{	
+ //display: none;
+}
+
+#mainToolBarTop, #mainToolBarRight, #mainToolBarBottom, #mainToolBarLeft
+{
+ z-index: 100;
+}
+
+#mainToolBarTop ul, #mainToolBarBottom ul
+{
+ color: #edfedf;
+ //position: absolute;
+ //top: 0;
+ //left: 0;
+ width: 100%;
+ height: 50%;
+ margin-top: 0;
+ padding-top: 0;
+ clear: both;
+}
+
+#mainToolBarTop li, #mainToolBarBottom ul
+{
+ color: #edfedf;
+ padding: 5px 20px;
+ display: inline-block;	
+ margin-top: 0;
+ padding-top: 0;
+}
+
+#mainToolBarTop
+{
+ background-color: rgba(250, 250, 250, 0.8);
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 70px;
+ width: 100%;	
+ 
+ //display: none;
+ 
+}
+
+#mainToolBarRight
+{
+ background-color: rgba(100, 100, 250, 0.8);
+
+ position: absolute;
+ top: 0;
+ right: 0;
+ height: 100%;
+ width: 70px;	
+ 
+ //display: none;
+}
+
+#mainToolBarRight ul
+{
+ margin-left: 0;
+ padding-left: 0;
+}
+
+#mainToolBarBottom
+{
+ background-color: rgba(100, 250, 100, 0.8);
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ height: 70px;
+ width: 100%;	
+ //display: none;
+}
+
+#mainToolBarLeft
+{	
+ background-color: rgba(250, 100, 100, 0.8);
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 70px;	
+ //display: none;
+}
+
+#mainMenuBox, #profileBox, #settingsBox
+{
+ background-color: rgba(0, 0, 0, 0.6);
+ display: none;
+ margin: 70px;
+}
+
+.homeScreenShortcuts
+{	
+ margin: 100px;
+}
+
+#artistHomeScreen
+{	
+ background-color: rgba(250, 100, 100, 0.4);
+ //background-image: url("../SharedResources/binary.jpg"); 
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 100%;	
+ display: none;
+}
+
+#scientistHomeScreen
+{	
+ background-color: rgba(100, 250, 100, 0.4);
+ //background-image: url("../SharedResources/binary.jpg"); 
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 100%;
+ display: none;
+}
+
+#businessHomeScreen
+{	
+ background-color: rgba(100, 100,250, 0.4);
+ //background-image: url("../SharedResources/binary.jpg"); 
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 100%;
+ display: none;
+}
+
+#mainHomeScreen li, #artistHomeScreen li, #scientistHomeScreen li, #businessHomeScreen li
+{	
+ background-color: rgba(230, 230, 230, 0.8);
+ max-width: 150px;
+ margin: 10px;
+}
+
+#mainHomeScreen li:hover, #artistHomeScreen li:hover, #scientistHomeScreen li:hover, #businessHomeScreen li:hover
+{	
+ background-color: rgba(130, 130, 130, 0.8);
+}

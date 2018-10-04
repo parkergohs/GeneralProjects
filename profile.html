@@ -1,0 +1,77 @@
+<!-- Template - Profile
+-
+-Filename: profile.html
+-
+-Notes:
+-
+-To Do:
+-
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+
+ <title>Template - Profile</title>
+ <link rel="icon" href="SharedResources/navTree.png">
+ <link rel="stylesheet" href="mainTemplate.css">
+ <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+<div id="headerBar"> 
+ <ul>
+  <li><a href="profile.html">Profile</a></li>
+  <li><a href="mediaGallery.html">Gallery</a></li>
+  <li><a href="searchScreen.html">Search</a></li>
+  <li><a href="settingsScreen.html">Settings</a></li>
+ </ul> 
+</div>
+
+<div id="mainArea"> 
+  <div id="profileHomeArea">
+  <div id="galleryArea">
+   <div id="profileAlbum" class="mediaGallery">
+    <img class="mySlides" src="SharedResources/dog0.jpg" alt="Profile Pic" width="200">
+    <img class="mySlides" src="SharedResources/dog1.jpg" width="200">
+    <img class="mySlides" src="SharedResources/dog2.jpg" width="200">
+    <img class="mySlides" src="SharedResources/dog3.jpg" width="200px">
+  
+    <ul>
+     <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+     <button onclick="addImgToGallery()">Add</button>
+     <button onclick="editImgGallery()">Edit</button>
+     <button onclick="deleteImgFromGallery()">Delete</button>
+     <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+    </ul>
+   </div>
+   Basic Info
+  </div>
+  
+  <div id="infoArea">
+   <div id="" class="infoSection">
+    <ul id="profileTabsList">	
+     <li><button>Resume</button></li>	
+	 <li><button>Portfolio</button></li>
+	 <li><button>Galleries</button></li>
+     <li><button>Shop</button></li>
+	 <li><button>Advertisers</button></li>
+	 <li></li>
+	 <li></li>
+    </ul>
+   </div>
+  </div>
+  </div>
+  
+</div>
+
+<script src="../../SharedResources/jquery.js"></script>
+<script src="profile.js"></script>
+</body>
+</html>
+
+
+
+

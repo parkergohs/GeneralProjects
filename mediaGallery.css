@@ -1,0 +1,57 @@
+#galleriesArea
+{
+ background-color: rgba(23, 46, 234, 0.0);	
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 50%;
+ height: 100%;
+ border-right: 3px solid grey;
+ overflow-y: scroll;
+}
+
+#descriptionsArea
+{
+ background-color: rgba(123, 46, 34, 0.0);	
+ position: absolute;
+ top: 0;
+ left: 50%;
+ width: 50%;
+ height: 100%;
+ 
+ padding: 10px;
+}
+
+.albumItem
+{
+ background-color: rgba(123, 146, 234, 0.8);	
+ width: 30%;
+ margin: 10px;
+ float: left;
+}
+
+.albumItem:hover
+{
+ background-color: rgba(123, 246, 134, 0.8);
+}
+
+.albumItem h2
+{
+ background-color: rgba(123, 146, 234, 0.8);	
+ margin-top: 0;
+ padding-top: 0;
+
+}
+
+.albumItem img
+{
+ background-color: rgba(123, 146, 234, 0.8);	
+
+}
+
+.albumItem p
+{
+ background-color: rgba(123, 146, 234, 0.8);	
+ margin-bottom: 0;
+ padding-bottom: 0;
+}

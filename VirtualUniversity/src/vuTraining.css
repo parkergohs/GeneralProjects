@@ -1,0 +1,17 @@
+/*Virtual University
+-
+-Filename: vuTraining.css
+-
+-Notes:
+-
+-To Do:
+-
+*/
+
+
+table, th, td
+{
+ border-collapse: collapse;
+ border: 1px solid;
+ text-align: center;
+}

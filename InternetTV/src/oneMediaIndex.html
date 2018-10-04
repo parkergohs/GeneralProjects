@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+
+ <title>One Media - Home</title>
+ <link rel="icon" href="../rsc/mainMenuButtonIcon.png">
+ <link rel="stylesheet" href="oneMediaIndex.css">
+ <link rel="stylesheet" href="oneMediaHeaderMenus.css">
+</head>
+
+<body>
+<div id="headerBar"> 
+ <ul>
+  <li><img id="siteNavMenuButton" src="../rsc/navTree.png" height="100" onclick="showSiteNavMenu()"></img></li>
+  <li><img id="mainMenuButton" src="../rsc/omSun.png" height="100" onclick="showMainMenu()"></img></li>
+  <li><img id="settingsMenuButton" src="../rsc/cog.png" height="100"  onclick="showSettingsMenu()"></img></li>
+ </ul> 
+</div>
+
+<div id="mainArea"> 
+ <div id="contentArea">
+ 
+  <div id="siteNavMenuScreen">
+   <h2>Site Nav</h2>
+   <ul>
+    <li><a href="oneMediaIndex.html">Home</a></li>
+    <li><a href="oneMediaProfile.html">Profile</a></li>
+    <li><a href="oneMediaMedia.html">Media</a></li>
+	<li><a href="oneMediaSuggestedMedia.html">Suggested Media</a></li>
+	<li><a href="oneMediaSearchedForMedia.html">Searched Media</a></li>
+	<li><a href="oneMediaTrendingMedia.html">Trending Media</a></li>
+	<li><a href="oneMediaMedia.html">Media</a></li>
+	<li><a href="oneMediaMedia.html">Media</a></li>
+   </ul>
+  </div>
+  
+  <div id="mainMenuScreen">
+   <h2>Main Menu</h2>
+   
+   <div id="searchOptions" class="oddNumberedSection">
+   <h3>Search</h3>
+	<input id="searchInput" placeholder="Search for..."></input>
+	<button onclick="search()">Begin Search</button>
+	<p>
+	 <button id="advancedSearchOptionsButton" onclick="toggleAdvancedSearchOptions()">Advanced Options</button>
+	 <div id="advancedSearchOptions">
+	  <ul>
+	   <li>Upload date</li>
+	   <select id="uploadDateSortBy" name="uploadDateSortBy">
+	    <option value="uploadDate">Upload date</option>
+		<option value="mostToLeastRecent">most to least recent</option>
+		<option value="leastToMostRecent"> least to most recent</option>
+		<option value="betweenDates">Between Dates</option>
+	   </select>
+	   
+	   <li>Rating</li>
+	   <select id="ratingSortBy" name="ratingDateSortBy">
+	    <option value="uploadDate">Rating Sort By</option>
+		<option value="mostToLeastRecent">High to low</option>
+		<option value="leastToMostRecent">Low to high</option>
+		<option value="betweenRatings">Between Ratings X and y</option>
+	   </select>
+	   
+	   
+	   <li>Language</li>
+	   <select id="mediaLanguageOption" name="mediaLanguageOption">
+	    <option value="language">Media Language</option>
+		<option value="english">English</option>
+		<option value="spanish">Spanish</option>
+		<option value="french">French</option>
+	   </select>
+	   
+	   <li>Subtitles</li>
+	   <select id="subtitleLanguageOption" name="subtitleLanguage">
+	    <option value="language">Subtitle Language</option>
+		<option value="english">English</option>
+		<option value="spanish">Spanish</option>
+		<option value="french">French</option>
+	   </select>
+	   
+	   <li>Content types</li>
+	   
+	   <li>Show fave channels first</li>
+	   <form>
+	    <input type="radio" name="enableDisableResponses" value="enable" checked>True<br>
+	    <input type="radio" name="enableDisableResponses" value="disable">False
+	   </form>
+	   
+	   <li>Age/awareness content</li>
+	   
+	   <li>Duration</li> 
+	   more than (default 0) <input id="durationMoreThan" placeholder="More than X minutes" size="5"></input>
+	   less than  (default no limit) <input id="durationLessThan" placeholder="Less than X Minutes" size="5"></input>
+	   
+	   <li>content cost/free</li>
+	   <select id="contentCostOption" name="subtitleLanguage">
+	    <option value="language">Free & Paid Content</option>
+		<option value="english">Free only</option>
+		<option value="spanish">Paid only low-high</option>
+		<option value="french">Paid only high-low</option>
+	   </select>
+	   
+	   <li>view count/ comment count</li>
+	  </ul>
+	 </div>
+	</p>
+	</div>
+	
+	 <div id="createMediaPost" class="evenNumberedSection">
+	  <ul>
+	   <li>Media Type</li>
+	   <select name="mediaType">
+	    <option value="video">Video</option>
+		<option value="image">Image</option>
+		<option value="audio">Audio</option>
+		<option value="document">Document</option>
+	   </select>
+		
+	   <li>File To Upload</li>
+	   <input id="uploadFile" placeholder="Select File To Upload"></input>
+	   
+	   <li>Media Title</li>
+	   <input id="mediaTitle" placeholder="Media Title"></input>
+	   
+	   <li>Media Cover Image</li>
+	   <input id="coverImage" placeholder="Select Cover Image"></input>
+	   
+	   <li>100 Char Media Summary</li>
+	   <input id="mediaSummary" placeholder="100 Char Media Summary" size="100"></input>
+	   
+	   <li>Full Media Description</li>
+	   <textarea name="fullMediaDescription" rows="10" cols="30"></textarea>
+	   
+	   <li>Lyrics/Dialogue</li>
+	   
+	   <li>Video Privacy</li>
+	   <select name="mediaPrivacySetting">
+	    <option value="video">Everyone</option>
+		<option value="image">Invite White List Only</option>
+		<option value="audio">Everyone Not Blacklisted</option>
+		<option value="document"></option>
+	   </select>
+		
+	   <li>Enable/Disable Responses</li>
+	   <form>
+	   <input type="radio" name="enableDisableResponses" value="enable" checked>Enable<br>
+	   <input type="radio" name="enableDisableResponses" value="disable">Disable
+	   </form>
+	   
+	   <button onclick="uploadMediaFile()">Upload Media File</button>
+	   
+	  </ul>
+	 </div>
+	
+  </div>
+  
+  <div id="settingsMenuScreen">
+   <h2>Settings Menu</h2>
+   
+   <div  class="evenNumberedSection">
+    <h3>Sign In</h3>
+	<input id="accountInput" placeholder="Username || Email"></input>
+	<input id="passwordInput" placeholder="Password"></input>
+	<button onclick="signIn()">Sign In</button>
+	<p><a href="recoverAccountInfo.html">forgot password?</a></p>
+	
+	<div id="newAccountInfo" class="oddNumberedSection">
+	  <ul>
+	   <li>Alias</li>
+	   <input id="alias" placeholder="Select Alias"></input>
+	   
+	   <li>Email</li>
+	   <input id="email" placeholder="Email"></input>
+	   
+	   <li>Password</li>
+	   <input id="password" placeholder="Password"></input>
+	      
+	  </ul>
+	  <button onclick="createAccount()">Create Account</button>
+	 </div>
+	
+   </div>
+   
+  </div>
+  
+  <h1>Welcome</h1>
+  
+  <h2>What Is OneMedia.net?</h2>
+  <p>
+   OneMedia.net is a next-generation social media site designed to 
+   maximize the quality of user experience via a unique combination
+   of simplicity and customizability. 
+  </p>
+  
+  <h2>How O.M. Differs</h2>
+  <p>
+   OneMedia differs from the current industry leaders first and foremost
+   by placing the site's users above executive and financial interests.
+   This philosophy results in a sleek and clean experience unburdened by 
+   abundantly unavoidable advertisements and other nonsense which users
+   frequently complain about and business executives rarely do anything about. 
+   <br><br>
+   O.M. is all about offering high quality experiences to the masses who actually
+   use the platform. This means simplicity for a quick learning curve as well as
+   customizability so each person's experiences is as much to their individual
+   liking as possible. Every feature gets carefully considered for balance between 
+   simplicity and customizability to ensure the most important core features remain
+   well-executed and the extent of customization stays within the range of individualistic 
+   views of beautiful elegance and far away from cluttered bloat.
+   <br>
+  </p>
+  
+  <h2>The O.M. Business Model</h2>
+  <p>
+   OneMedia utilizes advertisement systems unlike anything currently available
+   on mainstream sites. Where as the current model tends to be all about forcing 
+   undesirable ads onto content viewers and paying tiny fractions of ad revenue to
+   content producers, the O.M. model strives to meet the desires of content viewers,
+   content producers, advertisers, and O.M. employees alike; with the majority of ad
+   revenue going to the producers making O.M. what is is and only a small minority of
+   that ad revenue going to executives. The theory being that by placing the needs of the
+   masses of users, producers, advertisers and O.M. employees above the greed of executives
+   that far more high-quality content will be produced as the result of people actually having
+   legit incentives to motivate them to put in greater thought and effort into their works 
+   knowing that they will actually be rewarded based according to the value they provide. 
+   <br><br>
+   Specifically, the advertisement systems works like this:  
+   <ul>
+    <li>Advertisements negotiated producer:advertiser directly</li> 
+    <li>All ads display skip button after 3 seconds</li> 
+    <li>Ads can be paused/fastforwarded/rewound/etc just like standard videos</li> 
+	<li>Ad info + link button visible up top on video pause</li> 
+    <li>90%:10% profit split producer:OneMedia</li> 
+    <li>Ads can be placed anywhere from start to end of each video</li> 
+	<li>Which ads play when && where can be chosen manually or algorithmically</li>
+	<li>Ads can be viewed in each profile's "Ad library"</li>
+	<li>Ad revenue based on time watched (checks for unique IP/account ID)</li>
+   </ul>	
+  </p>
+  
+ </div>
+</div>
+
+
+<script src="searchAlgorithm.js"></script>
+<script src="oneMediaIndex.js"></script>
+<script src="oneMediaAccount.js"></script>
+
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,79 @@
+<!-- Template - Settings
+-
+-Filename: profile.html
+-
+-Notes:
+-
+-To Do:
+-
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+
+ <title>Template - Settings</title>
+ <link rel="icon" href="../rsc/itvLogo.png">
+  <link rel="stylesheet" href="mainTemplate.css">
+ <link rel="stylesheet" href="settingsScreen.css">
+</head>
+
+<body>
+<div id="headerBar"> 
+ <ul>
+  <li><a href="profile.html">Profile</a></li>
+  <li><a href="mediaGallery.html">Gallery</a></li>
+  <li><a href="searchScreen.html">Search</a></li>
+  <li><a href="settingsScreen.html">Settings</a></li>
+ </ul> 
+</div>
+
+<div id="mainArea"> 
+ <h1>Settings</h1>
+  <button>Save Settings</button>
+  
+ <form>
+  <h2>Theme Options</h2>
+  Background color:<br>
+  <input type="text" name="bkgdColor"><br>
+  
+  <h2>Privacy Options</h2>
+  Profile<br>
+  <input type="radio" name="profilePrivacy" value="private" checked>Private<br>
+  <input type="radio" name="profilePrivacy" value="public">Public<br>
+
+  <h2>Default Search Options</h2>
+  <input type="radio" name="defaultSearchOptions" value="all" checked>All<br>
+  <input type="radio" name="defaultSearchOptions" value="profiles">Profiles<br>
+  <input type="radio" name="defaultSearchOptions" value="albums">Albums<br>
+  <input type="radio" name="defaultSearchOptions" value="videos">Videos<br>
+  <input type="radio" name="defaultSearchOptions" value="audio">Audio<br>
+  <input type="radio" name="defaultSearchOptions" value="images">Images<br>
+  
+  <h2>Default Sort Options</h2>
+  Date<br>
+  <input type="radio" name="defaultSortOptions" value="newToOld" checked>New-Old<br>
+  <input type="radio" name="defaultSortOptions" value="oldToNew">Old-New<br>
+  <br>Views<br>
+  <input type="radio" name="defaultSearchOptions" value="highToLow" checked>High-Low<br>
+  <input type="radio" name="defaultSearchOptions" value="lowToHigh">Low-High<br>
+  <br>Include Previously Viewed Content? (Note: include indicator on each search result, like a pokeball for pokemon already caught)<br>
+  <input type="radio" name="includePreviouslyViewed" value="all" checked>Yes<br>
+  <input type="radio" name="includePreviouslyViewed" value="profiles">No<br>
+ 
+ 
+ </form>
+ 
+ 
+</div>
+
+<script src="../../SharedResources/jquery.js"></script>
+<script src="settingsScreen.js"></script>
+</body>
+</html>
+
+
+
+

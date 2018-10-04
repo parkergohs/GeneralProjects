@@ -1,0 +1,166 @@
+body
+{
+ color: #000;
+ //background-color: #02df49;	
+}
+
+h1
+{
+ color: #4837dd;
+ text-align: center;	
+ //width: 100%;
+ //background-color: pink;
+}
+
+h2
+{
+ color: #9278dd;
+ padding-left: 20px;
+}
+
+p
+{
+ padding: 0 10px;	
+ margin-bottom: 40px;
+}
+
+a
+{
+ color: #2324df;
+ text-decoration: none;
+}
+
+button
+{
+ background-color: grey;
+ border-color: silver; 
+ margin: 10px;
+}
+
+button:hover
+{
+ background-color: #8c9ccc;
+ border-color: silver; 
+}
+
+#headerBar
+{
+ background-color: #1289ff; 
+ background-size: 100% auto;
+ color: #edfedf;
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 20%;
+ width: 100%;
+ z-index: 11;
+ 
+}
+
+#headerBar ul
+{
+ color: #edfedf;
+ //position: absolute;
+ //top: 0;
+ //left: 0;
+ width: 100%;
+ height: 50%;
+ margin-top: 0;
+ padding-top: 0;
+ clear: both;
+}
+
+
+#headerBar li
+{
+ color: #edfedf;
+ padding: 5px 20px;
+ display: inline-block;	
+ margin-top: 0;
+ padding-top: 0;
+}
+
+#headerBar img
+{
+ margin: 0;
+ padding: 0; 
+ height: 60px;
+ margin-left: 200px;
+}
+
+#mainArea
+{
+ background-color: #02df49;	
+ background-image: url("../rsc/mainBkgd.jpg"); 
+ background-size: cover;
+ position: absolute;
+ top: 10%;
+ left: 0;
+ height: 90%;
+ width: 100%;	
+}
+
+#contentArea
+{
+ background-color: rgba(200, 200, 200, 0.2);
+ position: absolute;
+ top: 10%;
+ left: 0;
+ height: 90%;
+ width: 95%;
+ overflow-y: scroll;  
+}
+
+#pageHeaderBar
+{
+ z-index: 10;
+ position: absolute;
+ top: 10%;
+ left: 10%; 
+}
+
+
+#upper img
+{
+ margin-left: 200px;
+}
+
+
+#lower li
+{
+ margin-left: 140px;
+}
+
+.tabs
+{
+ background-color: blue;
+ color: white;
+ border-radius: 7px; 
+ margin: 0;
+ margin-left: 30%; 
+}
+
+.picsMediaItem 
+{
+ background-color: rgba(56, 200, 240, 0.5);	
+}
+
+.audioItem 
+{
+ background-color: rgba(156, 240, 240, 0.5);	
+}
+
+.docItem 
+{
+ background-color: rgba(56, 240, 100, 0.5);	
+}
+
+
+}
+@media
+{	
+}
+
+@media
+{
+}

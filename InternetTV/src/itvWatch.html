@@ -1,0 +1,252 @@
+<!-- Internet TV
+-
+-Filename: itvWatch.html
+-
+-Notes:
+-
+-To Do:
+-
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+
+ <title>Internet TV - Watch</title>
+ <link rel="icon" href="../rsc/itvLogo.png">
+ <link rel="stylesheet" href="itvHome.css">
+ <link rel="stylesheet" href="itvWatch.css">
+ <!-- <link rel="stylesheet" href="InternetTVHeaderMenus.css"> -->
+</head>
+
+<body>
+<div id="headerBar"> 
+ <ul>
+    <li><a href="itvProfile.html"><img id="settingsMenuButton" src="../../SharedResources/profileIcon.png" height="100"  onclick="showSettingsMenu()"></img></a></li>
+  <li><img id="siteNavMenuButton" src="../rsc/itvLogo.png" height="100" onclick="showSiteNavMenu()"></img></li>
+  <li><img id="searchMenuButton" src="../../SharedResources/searchIcon.png" height="100" onclick="showMainMenu()"></img></li>
+  <li><img id="settingsMenuButton" src="../rsc/cog.png" height="100"  onclick="showSettingsMenu()"></img></li>
+ </ul> 
+</div>
+
+<div id="mainArea"> 
+ 
+  <div id="siteNavMenuScreen">
+   <h2>Site Nav</h2>
+   <ul>
+    <li><a href="itvHome.html">Home</a></li>
+    <li><a href="itvWatch.html">Watch</a></li>
+	<li><a href="itvProfile.html">Profile</a></li>
+   </ul>
+  </div>
+  
+  <div id="mainMenuScreen">
+   <h2>Main Menu</h2>
+   
+   <div id="searchOptions" class="oddNumberedSection">
+   <h3>Search</h3>
+	<input id="searchInput" placeholder="Search for..."></input>
+	<button onclick="search()">Begin Search</button>
+	<p>
+	 <button id="advancedSearchOptionsButton" onclick="toggleAdvancedSearchOptions()">Advanced Options</button>
+	 <div id="advancedSearchOptions">
+	  <ul>
+	   <li>Upload date</li>
+	   <select id="uploadDateSortBy" name="uploadDateSortBy">
+	    <option value="uploadDate">Upload date</option>
+		<option value="mostToLeastRecent">most to least recent</option>
+		<option value="leastToMostRecent"> least to most recent</option>
+		<option value="betweenDates">Between Dates</option>
+	   </select>
+	   
+	   <li>Rating</li>
+	   <select id="ratingSortBy" name="ratingDateSortBy">
+	    <option value="uploadDate">Rating Sort By</option>
+		<option value="mostToLeastRecent">High to low</option>
+		<option value="leastToMostRecent">Low to high</option>
+		<option value="betweenRatings">Between Ratings X and y</option>
+	   </select>
+	   
+	   
+	   <li>Language</li>
+	   <select id="mediaLanguageOption" name="mediaLanguageOption">
+	    <option value="language">Media Language</option>
+		<option value="english">English</option>
+		<option value="spanish">Spanish</option>
+		<option value="french">French</option>
+	   </select>
+	   
+	   <li>Subtitles</li>
+	   <select id="subtitleLanguageOption" name="subtitleLanguage">
+	    <option value="language">Subtitle Language</option>
+		<option value="english">English</option>
+		<option value="spanish">Spanish</option>
+		<option value="french">French</option>
+	   </select>
+	   
+	   <li>Content types</li>
+	   
+	   <li>Show fave channels first</li>
+	   <form>
+	    <input type="radio" name="enableDisableResponses" value="enable" checked>True<br>
+	    <input type="radio" name="enableDisableResponses" value="disable">False
+	   </form>
+	   
+	   <li>Age/awareness content</li>
+	   
+	   <li>Duration</li> 
+	   more than (default 0) <input id="durationMoreThan" placeholder="More than X minutes" size="5"></input>
+	   less than  (default no limit) <input id="durationLessThan" placeholder="Less than X Minutes" size="5"></input>
+	   
+	   <li>content cost/free</li>
+	   <select id="contentCostOption" name="subtitleLanguage">
+	    <option value="language">Free & Paid Content</option>
+		<option value="english">Free only</option>
+		<option value="spanish">Paid only low-high</option>
+		<option value="french">Paid only high-low</option>
+	   </select>
+	   
+	   <li>view count/ comment count</li>
+	  </ul>
+	 </div>
+	</p>
+	</div>
+	
+	 <div id="createMediaPost" class="evenNumberedSection">
+	  <ul>
+	   <li>Media Type</li>
+	   <select name="mediaType">
+	    <option value="video">Video</option>
+		<option value="image">Image</option>
+		<option value="audio">Audio</option>
+		<option value="document">Document</option>
+	   </select>
+		
+	   <li>File To Upload</li>
+	   <input id="uploadFile" placeholder="Select File To Upload"></input>
+	   
+	   <li>Media Title</li>
+	   <input id="mediaTitle" placeholder="Media Title"></input>
+	   
+	   <li>Media Cover Image</li>
+	   <input id="coverImage" placeholder="Select Cover Image"></input>
+	   
+	   <li>100 Char Media Summary</li>
+	   <input id="mediaSummary" placeholder="100 Char Media Summary" size="100"></input>
+	   
+	   <li>Full Media Description</li>
+	   <textarea name="fullMediaDescription" rows="10" cols="30"></textarea>
+	   
+	   <li>Lyrics/Dialogue</li>
+	   
+	   <li>Video Privacy</li>
+	   <select name="mediaPrivacySetting">
+	    <option value="video">Everyone</option>
+		<option value="image">Invite White List Only</option>
+		<option value="audio">Everyone Not Blacklisted</option>
+		<option value="document"></option>
+	   </select>
+		
+	   <li>Enable/Disable Responses</li>
+	   <form>
+	   <input type="radio" name="enableDisableResponses" value="enable" checked>Enable<br>
+	   <input type="radio" name="enableDisableResponses" value="disable">Disable
+	   </form>
+	   
+	   <button onclick="uploadMediaFile()">Upload Media File</button>
+	   
+	  </ul>
+	 </div>
+	
+  </div>
+  
+  <div id="settingsMenuScreen">
+   <h2>Settings Menu</h2>
+   
+   <div  class="evenNumberedSection">
+    <h3>Sign In</h3>
+	<input id="accountInput" placeholder="Username || Email"></input>
+	<input id="passwordInput" placeholder="Password"></input>
+	<button onclick="signIn()">Sign In</button>
+	<p><a href="recoverAccountInfo.html">forgot password?</a></p>
+	
+	<div id="newAccountInfo" class="oddNumberedSection">
+	  <ul>
+	   <li>Alias</li>
+	   <input id="alias" placeholder="Select Alias"></input>
+	   
+	   <li>Email</li>
+	   <input id="email" placeholder="Email"></input>
+	   
+	   <li>Password</li>
+	   <input id="password" placeholder="Password"></input>
+	      
+	  </ul>
+	  <button onclick="createAccount()">Create Account</button>
+	 </div>
+	
+   </div>
+   
+  </div>
+  
+  
+  <div id="mediaArea">
+  
+   <h2>Media Area</h2>
+   
+   <ul id="channelBar">
+    <li><button onclick="changeChannelLeft()"><</button></li>
+    <li><button onclick="changeChannelRight()">></button></li>
+    <li><input type="number"></input></li>
+    <li><button onclick="goToChosenChannel()">GoTo</button></li></li>	
+    <li><button onclick="goToRandomChannel()">Random</button></li></li>
+   </ul>
+   
+   <video class="currentVideo" width="550" height="200" preload="metadata" poster="../rsc/settingsMenuButtonIcon.png" controls>
+	<source src="../rsc/testVideo0.mp4" type="video/mp4">
+   </video>
+  
+  <ul id="statBar">
+    <li><button>Rate</button></li>
+	<li><button>Share</button></li>
+	<li><button>Fave</button></li></li>	
+   </ul>
+   
+  <h3>Dogs, S.1 Ep.1</h3>
+  <p>
+   The first episode of the best show about dogs on earth. 
+  </p>
+  
+  
+  </div>
+  
+  <div id="commentArea">
+   <h2>Comment Area</h2>
+   
+   <ul>
+   <li><img id="siteNavMenuButton" src="../rsc/itvLogo.png" height="100" onclick="showSiteNavMenu()"></img></li>
+   <li><h3>Commenter Name/ID & Timestamp</h3></li>
+   </ul>
+   <p>Hot doggg! </p>
+   
+    <h3>Comment/Commenter Info</h3>
+   <p>Sup dawg</p>
+   
+    <h3>Comment/Commenter Info</h3>
+   <p>Who let the dogs out?! </p>
+   
+   <textarea name="commentInputTextArea" id="commentInputTextArea" placeholder="Enter comment" rows="7"></textarea>
+   <button onclick="postComment()">Post Comment</button>
+  </div>
+    
+</div>
+
+<script src="../../SharedResources/jquery.js"></script>
+<script src="itvHome.js"></script>
+<script src="itvWatch.js"></script>
+<script src="itvChannelBar.js"></script>
+</body>
+</html>
+
+
+

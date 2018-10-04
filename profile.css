@@ -1,0 +1,216 @@
+/* Template - Profile
+*
+*Filename: profile.css	
+*
+*Notes:
+*
+*To Do:
+*
+*/
+#headerBar
+{
+ background-color: rgba(23, 46, 234, 0.8);	
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 10%;
+}
+
+#headerBar li
+{
+ display: inline-block;	
+ margin-right: 20%;
+}
+
+#mainArea
+{
+ //background-color: rgba(223, 46, 234, 0.8);	
+ position: absolute;
+ top: 10%;
+ left: 0;
+ width: 100%;
+ height: 90%;
+}
+
+#profileTitle
+{
+ background-color: rgba(129, 139, 229, 0.7);
+ width: 100%;
+ clear: both;	
+}
+
+#profileTabsList li
+{
+ display: inline-block;
+}
+#profileTabBar
+{
+ background-color: black;
+ color: white;
+ margin-top: 0;
+ padding-top: 0;
+ 
+}
+
+#profileTabBar > li
+{
+ background-color: black;
+ color: white;
+ display: inline-block;
+}
+
+#profileAlbum
+{
+	
+}
+
+#basicInfo
+{
+	
+}
+
+#profileHomeArea
+{
+ z-index: 20;
+	
+}
+
+#galleryArea
+{
+ //background-color: rgba(29, 239, 254, 0.3);
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 50%;
+ border-right: 3px solid grey;
+}
+
+#galleryButtonsList li
+{
+ display: inline-block;	
+}
+
+#galleryArea img
+{
+ max-height: 300px;
+ margin: 20px;
+}
+
+#galleryArea ul
+{
+ margin-left: auto;
+}
+
+#infoArea
+{
+ //background-color: rgba(19, 221, 249, 0.3);
+ position: absolute;
+ top: 15%;
+ left: 50%;
+ height: 85%;
+ width: 50%;
+ z-index: 10;
+}
+
+
+/*Copied from itvWatch.css*/
+#mediaArea
+{
+ //background-color: rgba(20, 30, 43, 0.9);
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 50%;
+ overflow-y: scroll;
+ overflow-x: hidden;
+}
+
+#channelBar
+{ 
+ background-color: rgba(30, 130, 230, 0.8);
+}
+
+#mediaArea h3
+{
+ background-color: rgba(230, 230, 230, 0.9);	
+ width: 100%;
+ text-align: center;
+ margin-bottom: 0;
+ padding-bottom: 0;
+}
+
+#mediaArea P
+{
+ background-color: rgba(240, 240, 240, 0.9);	
+ width: 100%; 	
+ margin-top: 0;
+ padding-top: 0;
+}
+
+#channelBar li, #statBar li
+{ 
+ display: inline-block;
+}
+
+#commentArea
+{
+ background-color: rgba(20, 30, 43, 0.9);
+ position: absolute;
+ top: 0;
+ left: 50%;
+ height: 100%;
+ width: 50%;
+ overflow-x: hidden;
+ overflow-y: scroll;
+}
+
+#commentArea h3
+{
+ background-color: rgba(230, 230, 230, 0.9);	
+ width: 100%;
+ text-align: center;
+ margin-top: 3px;
+ padding-top: 0;
+ margin-bottom: 0;
+ padding-bottom: 0; 
+}
+
+#commentArea P
+{
+ background-color: rgba(240, 240, 240, 0.9);	
+ width: 100%; 	
+ margin-top: 0;
+ padding-top: 0;
+ margin-bottom: 0;
+ padding-bottom: 0;
+}
+
+#commentArea img
+{
+ height: 30px;
+}
+
+#commentArea ul
+{
+ margin-left: 10px;
+ padding-left: 0px;
+ background-color: rgba(230, 230, 230, 0.9);	
+}
+
+
+#commentArea li
+{
+ margin-left: 10px;
+ padding-left: 0px;
+ display: inline-block;
+}
+
+#commentInputTextArea
+{
+ width: 100%;
+ margin-top: 20px; 
+}
+/*End of text copied from itvWatch.css*/

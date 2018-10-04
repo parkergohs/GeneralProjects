@@ -1,0 +1,52 @@
+#profileTitle
+{
+ background-color: rgba(129, 139, 229, 0.7);
+ width: 100%;
+ clear: both;	
+}
+
+#profileAlbum
+{
+	
+}
+
+#basicInfo
+{
+	
+}
+
+#galleryArea
+{
+ background-color: rgba(229, 239, 254, 0.7);
+ position: absolute;
+ top: 15%;
+ left: 0;
+ height: 85%;
+ width: 50%;
+}
+
+#galleryButtonsList li
+{
+ display: inline-block;	
+}
+
+#galleryArea img
+{
+ max-height: 300px;
+ margin: 20px;
+}
+
+#galleryArea ul
+{
+ margin-left: auto;
+}
+
+#infoArea
+{
+ background-color: rgba(219, 221, 249, 0.7);
+ position: absolute;
+ top: 15%;
+ left: 50%;
+ height: 85%;
+ width: 50%;
+}

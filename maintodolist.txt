@@ -1,0 +1,87 @@
+
+
+Profile Page
+----------------------------------
+| Profile    Search    Settings   |
+----------------------------------
+|Info Portfolio Shop Media        |
+|---------------------------------|
+|                                 |
+|                                 |
+|                                 |
+|                                 |
+|                                 |
+|                                 |
+|                                 |
+----------------------------------
+
+
+
+
+Search Screen
+----------------------------------
+| Profile    Search    Settings   |
+----------------------------------
+|                                 |    Search for: ~Profiles, media, shops, 
+|                                 |    Sort by: rating, date, 
+                                       Filter By; Rating, categories, date, views
+|                                 |    Edu/Ent/Etc
+|                                 |    Show 1-100 Results per page                                         
+|                                 |    
+|                                 |
+|                                 |
+|                                 |
+|                                 |
+----------------------------------
+
+
+
+
+Settings Screen
+----------------------------------
+| Profile    Search    Settings   |
+----------------------------------
+|                                 |  >Alias
+|                                 |  >Privacy: 
+|                                 |    Public/private
+|                                 |      profiles + items
+|                                 |      galleries + items
+|                                 |  >bg image per screen 
+|                                 |  > color themes
+|                                 |  > 
+|                                 |
+----------------------------------
+
+
+
+
+Profile
+-Basic Info
+-Portfolio (Media Galleries)
+-Shop
+-
+-
+-
+
+Media Galleries
+-Videos
+-Audio
+-Images
+-Documents
+
+Search Algorithhs + display results 
+---
+-
+-
+--
+-
+-
+-
+
+
+Settings
+-
+-
+-
+-
+-
